@@ -1,24 +1,26 @@
 
-// Copy Constructors
+// Constructor overloading
 class name_f{
-    String surname;
     String name;
-    name_f(String surname,String name){
-        this.surname=surname;
-        this.name=name;
-    }
-    name_f(name_f n1){
-        this.surname=n1.surname;
-        this.name=n1.name;
+    int age;
+    long phone_number;
+
+    name_f(String name){
+        System.out.println("Name:"+name);
 
     }
+    name_f(int age){
+        System.out.println("Age:"+age);
+    }
+    name_f(long phone_number){
+        System.out.println("Phone_Number:"+phone_number);
+    }
+
 }
 public class Constructors {
     public static void main(String[] args) {
-        name_f n1=new name_f("Babariya","Rutvik");
-        System.out.println("Babariya Rutvik");
-
-        name_f n2=new name_f("Babariya","Rutvik");
-        System.out.println("Babariya Rutvik");
+        name_f nm1=new name_f("Rutvik");
+        name_f a2=new name_f("23");
+        name_f p3=new name_f("6351202084");
     }
 }
