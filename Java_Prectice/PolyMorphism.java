@@ -1,30 +1,34 @@
-public class PolyMorphism
-{
-    public static void main(String[] args) {
-        System.out.println(calc.add(17,6));
-        System.out.println(calc.sub(10,5));
-        System.out.println(calc.mul(18,8));
-        System.out.println(calc.div(10,2));
+class name_f1{
+    void print(){
+        System.out.println("Rutvik");
     }
 }
-class calc{
-    //Method 1
-    static int add(int a,int b){
-        int add;
-        return a+b;
+class  name_f2 extends name_f1{
+    void print(){
+        System.out.println("Jayaraj");
+    }
+}
+class name_f3 extends name_f1{
+    void print(){
+        System.out.println("Bhavesh");
+    }
+}
+class  name_f4 extends name_f1{
+    void print(){
+        System.out.println("Dhaval");
+    }
+}
+public class PolyMorphism {
+    public static void main(String[] args) {
+        name_f1 nameF1;
 
-        //Method 2
-    }
-    static int sub(int a,int b){
-        int sub;
-        return  a-b;
-    }
-    static int mul(int a,int b){
-        int mul;
-        return a*b;
-    }
-    static int div(int a,int b){
-        int div;
-        return a/b;
+        nameF1=new name_f2();
+        nameF1.print();
+
+        nameF1=new name_f3();
+        nameF1.print();
+
+        nameF1=new name_f4();
+        nameF1.print();
     }
 }
